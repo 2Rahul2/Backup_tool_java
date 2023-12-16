@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="ParentNode" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="890.0" style="-fx-background-color: #151530; -fx-border-color: #cbcdd4;" stylesheets="@ongoingbackup.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.OngoingBackupController">
+   <children>
+      <Label prefHeight="34.0" prefWidth="163.0" text="OnGoing Backup" textFill="WHITE">
+         <font>
+            <Font name="FontAwesome Regular" size="14.0" />
+         </font>
+      </Label>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="810.0">
+         <content>
+            <VBox fx:id="MainScreen" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="628.0" prefWidth="800.0" style="-fx-background-color: #1f1f33;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="91.0" prefWidth="810.0" style="-fx-background-color: #464a5c; -fx-border-color: black;">
+                     <padding>
+                        <Insets bottom="10.0" left="7.0" right="7.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="700.0" spacing="2.0">
+                           <children>
+                              <Label text="Folder Name">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="Last backup Taken :">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="29.0" text="Next Backup At: ">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="650.0" style="-fx-background-color: #907c9c;">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="205.0" text="Stage 1 of 2" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="18.0" prefWidth="205.0" text="Extracting.." />
+                              <Label layoutX="10.0" layoutY="28.0" prefHeight="18.0" prefWidth="205.0" text="1/2" />
+                              <ProgressBar maxWidth="1.7976931348623157E308" prefHeight="15.0" prefWidth="250.0" progress="0.64" />
+                           </children>
+                           <padding>
+                              <Insets left="15.0" right="15.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" layoutX="414.0" layoutY="21.0" prefHeight="69.0" prefWidth="610.0">
+                           <padding>
+                              <Insets left="15.0" right="15.0" />
+                           </padding>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="69.0" prefWidth="163.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #63516B;" text="Cancel Upload" textFill="WHITE">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color red="0.47843137383461" green="0.40392157435417175" blue="0.5411764979362488" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" style="-fx-background-color: none;">
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pause-button.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color red="0.8745098114013672" green="0.48627451062202454" blue="0.48627451062202454" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX">
+               <color>
+                  <Color red="0.21960784494876862" green="0.4470588266849518" blue="0.8509804010391235" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="40.0" right="40.0" top="50.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainScreen" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="890.0" style="-fx-background-color: #1b1e2b; -fx-border-color: #cbcdd4;" stylesheets="@editBackUp.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.EditBackupController">
+   <children>
+      <HBox alignment="BASELINE_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="500.0" spacing="550.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="194.0" text="Edit Your BackUp Files" textFill="WHITE">
+               <font>
+                  <Font name="FontAwesome Regular" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="refreshButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="674.0" prefWidth="890.0" style="-fx-background-color: #1f1f33;">
+         <content>
+            <VBox fx:id="displayContents" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="628.0" prefWidth="878.0" style="-fx-background-color: #1f1f33;">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="54.0" prefWidth="890.0" style="-fx-background-color: #464a5c; -fx-border-color: black; -fx-border-width: 0.5px;">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="210.0" text="folder name" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                           <font>
+                              <Font name="FontAwesome Regular" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                                 <image>
+                                    <Image url="@folder.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="300.0" layoutY="37.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="79.0" text="Hour" textFill="WHITE">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="66.0" prefWidth="40.0" style="-fx-border-color: gray;">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="52.0" style="-fx-background-color: none;">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Button>
+                              <TextField />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="54.0" style="-fx-background-color: none;">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Label contentDisplay="CENTER" layoutX="397.0" layoutY="37.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="66.0" text="Minutes">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutX="505.0" layoutY="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="2.0" prefWidth="40.0" style="-fx-border-color: gray;">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: none;">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Button>
+                              <TextField />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="71.0" style="-fx-background-color: none;">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="531.0" layoutY="32.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="2.0" prefWidth="40.0" style="-fx-background-color: none;">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@cross.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="90.0" right="10.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow height="14.0" radius="6.5" width="14.0">
+                                 <color>
+                                    <Color red="0.29411765933036804" green="0.29411765933036804" blue="0.29411765933036804" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="2.0" prefWidth="40.0" style="-fx-background-color: none;">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@correct.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="14.0" radius="6.5" width="14.0">
+                                 <color>
+                                    <Color red="0.29411765933036804" green="0.29411765933036804" blue="0.29411765933036804" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX">
+               <color>
+                  <Color red="0.21960784494876862" green="0.4470588266849518" blue="0.8509804010391235" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="40.0" right="40.0" top="50.0" />
+   </padding>
+</VBox>

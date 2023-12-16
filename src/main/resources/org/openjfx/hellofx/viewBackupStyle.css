@@ -1,0 +1,51 @@
+#folderData{
+	-fx-background-color: none;
+	-fx-border-width:black;
+	-fx-border-width:0.2px;
+	max-width:100%;
+	max-height:100%;
+}
+.CustomButton{
+	
+	-fx-border-width:black;
+	-fx-border-width:0.2px;
+	
+	max-height:100%;
+	-fx-padding: 1px;
+}
+#NamefolderLabel{
+	-fx-font-family: 'Font Awesome 5 Free';
+	-fx-border-color:black;
+	-fx-border-width:0.5px;
+	max-width:100%;
+	max-height:100%;
+	-fx-alignment: center-left;
+	-fx-padding: 0 0 0 20;
+	
+}
+
+#folderLabel{
+	-fx-border-color:black;
+	-fx-border-width:0.5px;
+	max-width:100%;
+	max-height:100%;
+	-fx-alignment: center;
+	-fx-font-family: 'Font Awesome 5 Free';
+	
+}
+.CustomButton:pressed{
+	-fx-background-color: green; 
+}
+#tempbtn:pressed {
+    -fx-background-color: red; /* Change the background color to red when pressed */
+}
+
+#folderButton{
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+	-fx-background-color: none;
+	-fx-border-color:black;
+	-fx-border-width:0.5px;
+	max-width:100%;
+	max-height:100%;
+}

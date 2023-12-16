@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.windowFile">
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="470.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="539.0" style="-fx-background-color: #eee6ff;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <HBox prefHeight="32.0" prefWidth="561.0" style="-fx-border-color: gray; -fx-border-width: 0px 0px 1px 0px;">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="29.0" style="-fx-border-color: black; -fx-border-width: 0px 0px 0px 1px;" text="Sno">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="192.0" style="-fx-border-color: black; -fx-border-width: 0px 0px 0px 1px;" text="Name">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="177.0" layoutY="10.0" prefHeight="31.0" prefWidth="164.0" style="-fx-border-color: black; -fx-border-width: 0px 0px 0px 1px;" text="Size">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="154.0" style="-fx-background-color: none; -fx-border-color: black; -fx-border-width: 0px 1px 0px 1px;" text="Download BackUp">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="438.0" prefWidth="566.0" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="mainFolderPage" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="423.0" prefWidth="571.0" style="-fx-background-color: #9d94b3;">
+                     <children>
+                        <Button alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="539.0" style="-fx-background-color: #6d6385;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <graphic>
+                              <HBox prefHeight="35.0" prefWidth="538.0">
+                                 <children>
+                                    <Label prefHeight="131.0" prefWidth="167.0" text="S.No" />
+                                    <Label graphicTextGap="8.0" layoutX="10.0" layoutY="10.0" prefHeight="131.0" prefWidth="167.0" text="Name">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@folder.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></Label>
+                                    <Label layoutX="177.0" layoutY="10.0" prefHeight="131.0" prefWidth="167.0" text="Size" />
+                                    <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="190.0" style="-fx-background-color: none;" text="Download BackUp" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@inbox.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></Button>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="88.0" prefWidth="754.0" style="-fx-background-color: #5b5370;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="32.0" prefWidth="754.0" style="-fx-background-color: #ddccff; -fx-border-color: black; -fx-border-width: 0.5px;">
+               <children>
+                  <Button fx:id="backupButton" mnemonicParsing="false" onAction="#previousPage" prefHeight="32.0" prefWidth="33.0" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fx:id="backimage" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@goArrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="forwardButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#forwardPage" prefHeight="32.0" prefWidth="33.0" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fx:id="forwardimage" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@goArrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="foldername" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="274.0" text="Current Folder">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="FontAwesome Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox fx:id="leftMenuTree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="594.0" prefWidth="204.0" style="-fx-background-color: #5b5370;" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

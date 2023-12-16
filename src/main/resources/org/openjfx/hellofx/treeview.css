@@ -1,0 +1,5 @@
+.tree-cell {
+    -fx-font-size: 10; /* Set the desired font size */
+}.button {
+    -fx-background-color: transparent;
+}

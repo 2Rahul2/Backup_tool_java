@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #1b1e2b;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.LoginController">
+   <children>
+      <Label style="-fx-text-fill: white;" text="Sign In">
+         <font>
+            <Font name="FontAwesome Regular" size="30.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </Label>
+      <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="278.0" prefWidth="259.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="Username">
+               <font>
+                  <Font name="FontAwesome Regular" size="19.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="username" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #464a5c;">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="10.0" layoutY="10.0" style="-fx-text-fill: white;" text="Password">
+               <font>
+                  <Font name="FontAwesome Regular" size="19.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="password" layoutX="10.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #464a5c;" />
+            <Label fx:id="errorText" layoutX="10.0" layoutY="92.0" style="-fx-text-fill: #f74636;" textFill="#f74636">
+               <font>
+                  <Font name="FontAwesome Regular" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="submitBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #5c427d; -fx-text-fill: white;" text="Submit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="18.0" radius="8.5" width="18.0">
+                     <color>
+                        <Color red="0.19975829124450684" green="0.1406627744436264" blue="0.23157894611358643" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="don't have account? ">
+                     <font>
+                        <Font name="FontAwesome Regular" size="14.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="clickhere" alignment="CENTER" contentDisplay="CENTER" text="create here" textFill="#ffb200" underline="true" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

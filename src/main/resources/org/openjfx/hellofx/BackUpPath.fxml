@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="890.0" style="-fx-background-color: #151530; -fx-border-color: #cbcdd4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.BackupPath">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <TitledPane animated="false" prefHeight="282.0" prefWidth="755.0" style="-fx-background-color: #151530;" text="Add Folder">
+         <content>
+            <VBox prefHeight="166.0" prefWidth="754.0" style="-fx-background-color: #12122e;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="73.0" prefWidth="615.0" style="-fx-background-color: #1f1f33; -fx-border-color: gray; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <Label fx:id="folderLabelName" prefHeight="34.0" prefWidth="522.0" style="-fx-background-color: #464a5c; -fx-text-fill: white;" text="Folder Name">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="selectFolder" mnemonicParsing="false" prefHeight="49.0" prefWidth="160.0" style="-fx-background-color: #5c427d;" text="Select Folder" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="FontAwesome Regular" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" prefHeight="143.0" prefWidth="734.0" style="-fx-background-color: #1f1f33;">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Select hour" wrappingWidth="121.11878204345703">
+                           <font>
+                              <Font name="FontAwesome Regular" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Text>
+                        <VBox alignment="CENTER" prefHeight="143.0" prefWidth="105.0" style="-fx-border-color: gray;">
+                           <children>
+                              <Button fx:id="folderHourInc" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="46.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="TimeText1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="105.0" style="-fx-background-color: #c2b2d4; -fx-font-size: 25px;">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="25.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="folderHourDec" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Minutes" wrappingWidth="114.71875762939453">
+                           <font>
+                              <Font name="FontAwesome Regular" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <VBox alignment="CENTER" layoutX="125.0" layoutY="10.0" prefHeight="143.0" prefWidth="105.0" style="-fx-border-color: gray;">
+                           <children>
+                              <Button fx:id="folderMinInc" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="46.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="TimeText2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="105.0" style="-fx-background-color: #c2b2d4; -fx-font-size: 25px;">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="25.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="folderMinDec" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Button fx:id="folderUpload" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #5c427d;" text="Upload" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX">
+               <color>
+                  <Color red="0.2862745225429535" green="0.3607843220233917" blue="0.9254902005195618" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="50.0" layoutY="50.0" prefHeight="282.0" prefWidth="755.0" style="-fx-background-color: gray;" text="Add Single File">
+         <content>
+            <VBox prefHeight="166.0" prefWidth="754.0" style="-fx-background-color: #12122e;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="73.0" prefWidth="615.0" style="-fx-background-color: #1f1f33; -fx-border-color: gray; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <Label fx:id="fileLabelName" prefHeight="34.0" prefWidth="522.0" style="-fx-background-color: #464a5c; -fx-text-fill: white;" text="File Name">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="selectFile" mnemonicParsing="false" prefHeight="49.0" prefWidth="160.0" style="-fx-background-color: #5c427d;" text="Select File" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" prefHeight="143.0" prefWidth="734.0" style="-fx-background-color: #1f1f33;">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Select hour" wrappingWidth="121.11878204345703">
+                           <font>
+                              <Font name="FontAwesome Regular" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Text>
+                        <VBox alignment="CENTER" prefHeight="143.0" prefWidth="105.0" style="-fx-border-color: gray;">
+                           <children>
+                              <Button fx:id="fileHourInc" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="46.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="TimeText3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="105.0" style="-fx-background-color: #c2b2d4; -fx-font-size: 25px;">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="25.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="fileHourDec" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Minutes" wrappingWidth="114.71875762939453">
+                           <font>
+                              <Font name="FontAwesome Regular" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <VBox alignment="CENTER" layoutX="125.0" layoutY="10.0" prefHeight="143.0" prefWidth="105.0" style="-fx-border-color: gray;">
+                           <children>
+                              <Button fx:id="fileMinInc" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="46.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <TextField fx:id="TimeText4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="105.0" style="-fx-background-color: #c2b2d4; -fx-font-size: 25px;">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="25.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="fileMinDec" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" minWidth="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: #907c9c;">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Button fx:id="fileUpload" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #5c427d;" text="Upload" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="FontAwesome Regular" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX">
+               <color>
+                  <Color red="0.2862745225429535" green="0.3607843220233917" blue="0.9254902005195618" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TitledPane>
+   </children>
+</VBox>

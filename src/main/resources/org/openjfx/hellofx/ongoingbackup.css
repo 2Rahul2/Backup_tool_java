@@ -1,0 +1,21 @@
+#mainS{
+	-fx-padding: 50 40 20 40;
+	-fx-background-color: #e6e6ff;
+}
+#nodeHbox{
+	-fx-background-color: #ddccff;
+
+	-fx-padding: 10 7 10 7;
+}
+#labelText{
+	-fx-font-size: 16px;
+	-fx-font-family: 'Font Awesome 5 Free';
+}
+#progressStage{
+	-fx-padding: 0 15 0 15;
+	-fx-background-color: #edd2f7;
+}
+#cancelButton{
+	-fx-background-color: #63516B;
+	-fx-text-fill: white;
+}
